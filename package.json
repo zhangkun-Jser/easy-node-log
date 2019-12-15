@@ -1,0 +1,40 @@
+{
+  "name": "easy-logger-node",
+  "description": "a server side common logger module by log4js",
+  "version": "1.2.0",
+  "scripts": {
+    "lint": "eslint ./src/**/*.js",
+    "test": "npm run lint & cross-env NODE_ENV=qa istanbul cover _mocha -- test/index.js --no-timeouts",
+    "test:pub": "cross-env NODE_ENV=pub node test/index.js",
+    "test:qa": "cross-env NODE_ENV=qa node test/index.js",
+    "test:profile": "cross-env NODE_ENV=profile node test/index.js",
+    "test:dev": "cross-env NODE_ENV=dev node test/index.js",
+    "test:prod": "cross-env NODE_ENV=production node test/index.js",
+    "doc": "jsdoc2md ./src/index.js"
+  },
+  "main": "./src/index.js",
+  "keywords": [],
+  "maintainers": [
+    {
+      "name": "guomeiqing",
+      "email": "guomeiqing@sogou-inc.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangkun-Jser/easy-logger-node.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "log4js": "^0.6.35",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^5.2.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "istanbul": "^0.4.5",
+    "jsdoc-to-markdown": "^4.0.1",
+    "mocha": "^5.2.0"
+  }
+}
