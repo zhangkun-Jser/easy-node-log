@@ -1,7 +1,7 @@
 {
   "name": "easy-logger-node",
   "description": "a server side common logger module by log4js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "scripts": {
     "lint": "eslint ./src/**/*.js",
     "test": "npm run lint & cross-env NODE_ENV=qa istanbul cover _mocha -- test/index.js --no-timeouts",
@@ -13,13 +13,8 @@
     "doc": "jsdoc2md ./src/index.js"
   },
   "main": "./src/index.js",
-  "keywords": [],
-  "maintainers": [
-    {
-      "name": "guomeiqing",
-      "email": "guomeiqing@sogou-inc.com"
-    }
-  ],
+  "keywords": ["node","logger"],
+  "author": "zk",
   "repository": {
     "type": "git",
     "url": "https://github.com/zhangkun-Jser/easy-logger-node.git"
