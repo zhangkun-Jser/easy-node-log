@@ -1,7 +1,7 @@
 # easy-logger-node
 node.js端的通用日志组件，基于log4js封装，提供默认、通用的日志输出配置，使用简单，上手方便。。
 
-[![NPM](https://nodei.co/npm/auto-form-create.png)](https://nodei.co/npm/easy-logger-node/)
+[![NPM](https://nodei.co/npm/easy-logger-node.png)](https://nodei.co/npm/easy-logger-node/)
 
 ## 使用方法
 ### 安装
